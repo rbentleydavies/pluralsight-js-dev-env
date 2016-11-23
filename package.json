@@ -8,7 +8,8 @@
     "lint": "esw webpack.config.*, src/*.js, buildScripts",
     "lint2": "esw src/index.js",
     "lint-watch": "npm run lint -- --watch",
-    "test": "mocha --reporter progress buildScripts/testSetup.js \"src/**/*.test.js\""
+    "test": "mocha --reporter progress buildScripts/testSetup.js \"src/**/*.test.js\"",
+    "build": "babel-node buildScripts/build.js"
   },
   "author": "Cory House",
   "license": "MIT",
